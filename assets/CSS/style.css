@@ -5,12 +5,12 @@
   /* Background */
   --bg-main: hsl(0, 0%, 100%); /* Beyaz arka plan */
   --bg-secondary: hsl(0, 0%, 90%); /* Açık gri – gövde tonu */
-  --bg-dark: hsl(10, 69%, 60%); /* Çok koyu kahverengi/siyah – metin için */
+  --bg-dark: hsl(18, 90%, 49.8%); /* Çok koyu kahverengi/siyah – metin için */
 
   /* Text */
   --text-main: hsl(13, 16%, 11%); /* Logo yazı rengi */
   --text-secondary: hsl(15, 2%, 20%); /* Açık gri yardımcı yazılar */
-  --text-accent: hsl(10, 69%, 60%); /* Döner kırmızısı */
+  --text-accent: hsl(18, 90%, 49.8%); /* Döner kırmızısı */
 }
 
 * {
@@ -63,7 +63,7 @@ section h2 {
   position: sticky;
   top: 0;
   z-index: 999;
-  border-bottom: 2px solid var(--text-main);
+  border-bottom: 2px solid var(--bg-main);
 }
 
 .logo {
@@ -122,7 +122,7 @@ section h2 {
 .mobile-menu-icon span {
   width: 25px;
   height: 3px;
-  background: #333;
+  background: var(--bg-main);
   border-radius: 5px;
 }
 
@@ -139,7 +139,7 @@ footer {
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.4px;
-  border-top: 2px solid var(--text-main);
+  border-top: 2px solid var(--bg-main);
 
   display: flex;
   justify-content: center;
