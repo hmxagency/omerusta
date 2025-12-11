@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  /* Background */
+  --bg-main: hsl(0, 0%, 100%); /* Beyaz arka plan */
+  --bg-secondary: hsl(0, 0%, 90%); /* Açık gri – gövde tonu */
+  --bg-dark: hsl(10, 69%, 60%); /* Çok koyu kahverengi/siyah – metin için */
+
+  /* Text */
+  --text-main: hsl(13, 16%, 11%); /* Logo yazı rengi */
+  --text-secondary: hsl(15, 2%, 20%); /* Açık gri yardımcı yazılar */
+  --text-accent: hsl(10, 69%, 60%); /* Döner kırmızısı */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* padding width’e dahil olur */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-main);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+section {
+  padding: clamp(30px, 6vw, 60px) 0;
+  width: 100%;
+}
+
+section h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--text-main);
+  font-family: "GFS Didot", serif;
+}
+
+section h2 {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 2.2rem;
+  color: var(--text-accent);
+  text-transform: uppercase;
+  font-family: "GFS Didot", serif;
+}
+
+.container {
+  border-radius: 22px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px 100px;
+  box-sizing: border-box;
+}
+
+/* HEADER -------------------------------------------------- */
+.main-header {
+  width: 100%;
+  background: var(--bg-dark);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 2px solid var(--text-main);
+}
+
+.logo {
+  font-family: "GFS Didot", serif;
+  display: flex;
+  align-items: center; /* Dikey ortalama */
+  gap: 12px; /* Resim ile yazı arası boşluk */
+  color: var(--bg-main);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.logo img {
+  width: 45px; /* Çok büyükse küçülttüm */
+  height: auto;
+  display: block;
+}
+
+.nav-container {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.nav-container a {
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--bg-main);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--bg-secondary);
+}
+
+/* Mobil Menü */
+.mobile-menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.mobile-menu-icon span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 5px;
+}
+
+section:target {
+  scroll-margin-top: 100px; /* Header'ınızın yüksekliği kadar boşluk bırakın */
+  padding-top: 0; /* Eğer section'da zaten padding varsa gerekmez */
+}
+
+footer {
+  background: var(--bg-dark);
+  color: var(--bg-main);
+  text-align: center;
+  padding: 25px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  border-top: 2px solid var(--text-main);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Üstündeki section ile nefes boşluğu */
+  margin-top: 60px;
+
+  /* Hafif shadow / derinlik efekti */
+}

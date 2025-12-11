@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+    <link rel="stylesheet" href="assets/CSS/menu.css" />
+    <link rel="stylesheet" href="assets/CSS/responsiv.css" />
+    <title>Ömer Usta Menü</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/Images/hero/logo.png" alt="logo" />
+          Ömer Usta
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Ana Sayfa</a>
+          <a href="menu.html">Menü</a>
+          <a href="index.html#about-us">Hakkımızda</a>
+          <a href="index.html#comments">Yorumlar</a>
+          <a href="index.html#contact">İletişim</a>
+        </nav>
+
+        <div class="mobile-menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ANA KATEGORİ GRID -->
+    <div class="menu-container">
+      <h1 class="menu-title">Menü</h1>
+      <div id="categoryScreen" class="category-grid">
+        <!-- Kategoriler JS ile doldurulacak -->
+      </div>
+    </div>
+
+    <!-- ÜRÜN LİSTESİ EKRANI -->
+    <div id="productScreen" class="product-list" style="display: none">
+      <div class="product-inner">
+        <div class="product-container">
+          <h2 id="categoryTitle" class="product-title"></h2>
+          <div id="productGrid" class="menu-grid"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-btn" onclick="goBack()">← Geri</div>
+
+    <script src="assets/JavaScript/main.js"></script>
+    <script>
+      // ----------------------------
+      // JSON VERİLER
+      // ----------------------------
+
+      const categories = [
+        {
+          id: "kebaplar",
+          name: "Kebaplar",
+          img: "kebap.png",
+        },
+        {
+          id: "Döner",
+          name: "Döner",
+          img: "tavukdurum.png",
+        },
+        {
+          id: "Tost",
+          name: "Tostlar",
+          img: "tost.png",
+        },
+        {
+          id: "İçecekler",
+          name: "İçecekler",
+          img: "icecekler.png",
+        },
+      ];
+
+      const products = [
+        {
+          title: "Adana Kebap",
+          desc: "",
+          price: "220 TL",
+          category: "kebaplar",
+          img: "adanakebap.png",
+        },
+        {
+          title: "Urfa Kebap",
+          desc: "",
+          price: "240 TL",
+          category: "kebaplar",
+          img: "urfakebap.png",
+        },
+        {
+          title: "Ciğer Kebap",
+          desc: "",
+          price: "250 TL",
+          category: "kebaplar",
+          img: "cigerkebap.png",
+        },
+
+        {
+          title: "Ekmek Arası Tavuk Döner",
+          desc: "",
+          price: "80 TL",
+          category: "Döner",
+          img: "tavukdoner.png",
+        },
+        {
+          title: "Tavuk Dürüm",
+          desc: "",
+          price: "90 TL",
+          category: "Döner",
+          img: "tavukdurum.png",
+        },
+        {
+          title: "Tavuk Kola Menü",
+          desc: "",
+          price: "120 TL",
+          category: "Döner",
+          img: "tavukkola.png",
+        },
+        {
+          title: "Tavuk Ayran Menü",
+          desc: "",
+          price: "100 TL",
+          category: "Döner",
+          img: "tavukayran.png",
+        },
+
+        {
+          title: "Karışık Tost",
+          desc: "",
+          price: "75 TL",
+          category: "Tost",
+          img: "karisiktost.png",
+        },
+        {
+          title: "Kaşarlı Tost",
+          desc: "",
+          price: "70 TL",
+          category: "Tost",
+          img: "kasarlitost.png",
+        },
+        {
+          title: "Sucuklu Tost",
+          desc: "",
+          price: "70 TL",
+          category: "Tost",
+          img: "sucuklutost.png",
+        },
+        {
+          title: "Ayran",
+          desc: "",
+          price: "40",
+          category: "İçecekler",
+          img: "ayran.png",
+        },
+        {
+          title: "Kola",
+          desc: "",
+          price: "50",
+          category: "İçecekler",
+          img: "kola.png",
+        },
+        {
+          title: "Şalgam Suyu",
+          desc: "",
+          price: "60",
+          category: "İçecekler",
+          img: "salgamsuyu.png",
+        },
+      ];
+
+      // ----------------------------
+      // KATEGORİLERİ EKRANA BAS
+      // ----------------------------
+      const categoryScreen = document.getElementById("categoryScreen");
+      let htmlCat = "";
+
+      categories.forEach((c) => {
+        htmlCat += `
+                <div class="category-box" data-category="${c.id}">
+                    <img src="assets/images/menus/${c.img}">
+                    <span>${c.name}</span>
+                </div>
+            `;
+      });
+
+      categoryScreen.innerHTML = htmlCat;
+
+      let inProductScreen = false;
+      const backBtn = document.querySelector(".back-btn");
+      const productScreen = document.getElementById("productScreen");
+      const productGrid = document.getElementById("productGrid");
+
+      // ----------------------------
+      // KATEGORİ TIKLAMA
+      // ----------------------------
+      document.querySelectorAll(".category-box").forEach((box) => {
+        box.addEventListener("click", () => {
+          const category = box.dataset.category;
+
+          document.getElementById("categoryTitle").textContent =
+            box.textContent;
+
+          let html = "";
+          products.forEach((p) => {
+            if (p.category === category) {
+              html += `
+                            <div class="menu-card">
+                                <img src="assets/images/menus/${p.img}">
+                                <h3>${p.title}</h3>
+                                <p>${p.desc}</p>
+                                <strong>${p.price}</strong>
+                            </div>
+                        `;
+            }
+          });
+
+          productGrid.innerHTML = html;
+
+          openCategory();
+        });
+      });
+
+      function openCategory() {
+        inProductScreen = true;
+
+        categoryScreen.style.display = "none";
+        productScreen.style.display = "block";
+
+        window.scrollTo(0, 0);
+
+        backBtn.style.display = "block";
+
+        history.pushState({ page: "product" }, "", "");
+      }
+
+      function goBack() {
+        inProductScreen = false;
+
+        productScreen.style.display = "none";
+        categoryScreen.style.display = "grid";
+
+        window.scrollTo(0, 0);
+
+        backBtn.style.display = "none";
+      }
+
+      window.addEventListener("popstate", function () {
+        if (inProductScreen) {
+          goBack();
+          history.pushState({ page: "product" }, "", "");
+        }
+      });
+    </script>
+  </body>
+</html>
