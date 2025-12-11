@@ -5,13 +5,14 @@
   /* Background */
   --bg-main: hsl(0, 0%, 100%); /* Beyaz arka plan */
   --bg-secondary: hsl(0, 0%, 90%); /* Açık gri – gövde tonu */
-  --bg-dark: hsl(10, 69%, 60%); /* Çok koyu kahverengi/siyah – metin için */
+  --bg-dark: hsl(18, 90%, 49.8%); /* Çok koyu kahverengi/siyah – metin için */
 
   /* Text */
   --text-main: hsl(13, 16%, 11%); /* Logo yazı rengi */
   --text-secondary: hsl(15, 2%, 20%); /* Açık gri yardımcı yazılar */
-  --text-accent: hsl(10, 69%, 60%); /* Döner kırmızısı */
+  --text-accent: hsl(18, 90%, 49.8%); /* Döner kırmızısı */
 }
+
 
 * {
   margin: 0;
