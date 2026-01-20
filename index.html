@@ -3,7 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menü | Ömer Usta</title>
+
+    <meta
+      name="description"
+      content="Ömer Usta Döner & Kebap - Çamlıca'da odun ateşinde gerçek kebap, özel marine edilmiş etler ve eşsiz lezzetler. Hemen sipariş verin."
+    />
+    <meta
+      name="keywords"
+      content="döner, kebap, çamlıca dönerci, ömer usta, yaprak döner, odun ateşi, balıkesir et, hızlı servis, lezzetli yemekler"
+    />
+    <meta name="author" content="Ömer Usta" />
+
+    <meta property="og:title" content="Ömer Usta | Lezzetin Yeni Nesli" />
+    <meta
+      property="og:description"
+      content="Odun ateşinde pişen efsane lezzetleri keşfedin. 10 yıllık tecrübe."
+    />
+    <meta property="og:image" content="assets/img/aboutus.PNG" />
+
+    <title>Ömer Usta | Lezzetin Yeni Nesli</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700;900&display=swap"
@@ -15,9 +33,8 @@
     />
 
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    <link rel="stylesheet" href="assets/css/project.css" />
   </head>
+
   <body>
     <nav class="glass-nav">
       <div class="nav-container">
@@ -28,466 +45,312 @@
         </div>
 
         <ul class="nav-menu">
-          <li><a href="index.html#anasayfa">Anasayfa</a></li>
-          <li><a href="index.html#bento-menu">Menü</a></li>
-          <li><a href="index.html#discover">Keşfet</a></li>
-          <li><a href="index.html#hakkimizda">Hakkımızda</a></li>
-          <li><a href="index.html#iletisim">İletişim</a></li>
+          <li><a href="#anasayfa">Anasayfa</a></li>
+          <li><a href="#bento-menu">Menü</a></li>
+          <li><a href="#discover">Keşfet</a></li>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
         </ul>
         <a href="tel:0224 452 52 10" class="nav-cta">Sipariş Hattı</a>
       </div>
     </nav>
 
-    <header class="menu-hero">
-      <h1>LEZZETLERİMİZ</h1>
-      <p>Odun ateşinde pişen efsane tatlar</p>
-    </header>
+    <section id="anasayfa" class="hero-modern">
+      <div class="hero-overlay"></div>
+      <div class="hero-text">
+        <span class="badge">Sektörde 10. Yıl</span>
+        <h1>KÖMÜR ATEŞİNDE<br /><span class="highlight">GERÇEK KEBAP</span></h1>
+        <p>
+          Geleneksel reçeteler, modern sunumlarla buluşuyor. Ömer Usta'nın
+          ustalığı şimdi dijitalde.
+        </p>
+        <div class="hero-btns">
+          <a href="menu.html" class="btn-main">Menüyü Gör</a>
+          <a href="https://instagram.com/omerustadonerkebap" class="btn-outline"
+            ><i class="fab fa-instagram"></i> Bizi Takip Et</a
+          >
+        </div>
+      </div>
+    </section>
 
-    <div class="category-sticky-bar">
-      <div class="category-scroll">
-        <a href="#porsiyon" class="cat-link active">
-          <i class="fas fa-utensils"></i> Porsiyonlar
-        </a>
+    <section id="bento-menu" class="bento-container">
+      <div class="bento-header">
+        <h2>Haftanın Favorileri</h2>
+        <p>En çok tercih edilen, damak çatlatan lezzetlerimiz.</p>
+      </div>
 
-        <a href="#durum" class="cat-link">
-          <i class="fas fa-scroll"></i> Dürümler
-        </a>
+      <div class="grid-layout">
+        <div
+          class="grid-item tall"
+          style="
+            background-image: url(&quot;https://avatars.mds.yandex.net/get-neurolib-art/16495301/picture-UZtCofEhmgJAkOvOaKzp/orig&quot;);
+          "
+        >
+          <div class="item-info"><h3>Tostlar</h3></div>
+        </div>
+        <div
+          class="grid-item wide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1561651823-34feb02250e4?q=80&w=800&quot;);
+          "
+        >
+          <div class="item-info"><h3>Tavuk Dönerler</h3></div>
+        </div>
+        <div
+          class="grid-item square"
+          style="background-image: url(&quot;assets/img/çiğköfte.jpg&quot;)"
+        >
+          <div class="item-info"><h3>Çiğ Köfteler</h3></div>
+        </div>
+        <div
+          class="grid-item square"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=600&quot;);
+          "
+        >
+          <div class="item-info"><h3>Kebaplar</h3></div>
+        </div>
+        <div
+          class="grid-item wide"
+          style="background-image: url(&quot;assets/img/kumru.jpg&quot;)"
+        >
+          <div class="item-info"><h3>Kumrular</h3></div>
+        </div>
+      </div>
 
-        <a href="#doner" class="cat-link">
-          <i class="fas fa-drumstick-bite"></i> Tavuk Döner
-        </a>
-
-        <a href="#kumru" class="cat-link">
-          <i class="fas fa-burger"></i> Kumrular
-        </a>
-
-        <a href="#tost" class="cat-link">
-          <i class="fas fa-bread-slice"></i> Tostlar
-        </a>
-
-        <a href="#icecek" class="cat-link">
-          <i class="fa-solid fa-whiskey-glass"></i> İçecekler
+      <div style="text-align: center; margin-top: 2.5rem">
+        <a
+          href="menu.html"
+          class="btn-outline"
+          style="color: #fff; border-color: #333"
+        >
+          <i class="fas fa-menu"></i> Menümüz
         </a>
       </div>
-    </div>
-    <main class="menu-container">
-      <section id="porsiyon" class="menu-section">
-        <h2 class="section-title">Porsiyonlar</h2>
-        <div class="menu-grid">
-          <div class="menu-card">
-            <div class="card-img">
-              <img
-                src="assets/img/menu/porsiyon/Adana-Kebap.webp"
-                alt="Adana"
-              />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Adana Porsiyon</h3>
-                <span class="price">350₺</span>
-              </div>
-              <p class="desc">
-                Zırh ile çekilmiş acılı kıyma kebabı; közlenmiş domates, biber,
-                bulgur pilavı ve lavaş eşliğinde.
-              </p>
-            </div>
-          </div>
+    </section>
 
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/porsiyon/urfa.webp" alt="Urfa" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Urfa Porsiyon</h3>
-                <span class="price">350₺</span>
-              </div>
-              <p class="desc">
-                Özel baharatlarla harmanlanmış acısız zırh kıyması, yanında
-                pilav, sumaklı soğan ve yeşillikler ile.
-              </p>
-            </div>
-          </div>
+    <section class="visual-feast" id="discover">
+      <div class="feast-overlay"></div>
+      <div class="feast-content">
+        <a
+          href="https://www.instagram.com/p/DPecqqfj8E9/"
+          target="_blank"
+          class="play-btn"
+        >
+          <i class="fas fa-play"></i>
+          <div class="pulse-ring"></div>
+        </a>
+        <h2>LEZZETİN SESİ</h2>
+        <p>Kömür ateşinin çıtırtısı, bıçağın ustalığı...</p>
+      </div>
+    </section>
 
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/porsiyon/ciger.webp  " alt="Ciğer" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Ciğer Porsiyon</h3>
-                <span class="price">350₺</span>
-              </div>
-              <p class="desc">
-                Lokum gibi pişmiş kuzu ciğer şişleri, özel baharatlar, közlenmiş
-                sebzeler ve lavaş ekmeği ile servis edilir.
-              </p>
-            </div>
-          </div>
+    <section id="hakkimizda" class="story-section">
+      <div class="story-content">
+        <div class="story-image">
+          <img src="assets/img/aboutus.PNG" alt="Ömer Usta" />
+          <div class="experience-badge">10+ Yıl Deneyim</div>
+        </div>
+        <div class="story-text">
+          <span class="sub-title">Lezzet Sırrımız</span>
+          <h2>Gelenekten Geleceğe<br />Aynı Lezzet</h2>
+          <p>
+            <strong>Ömer Usta</strong> olarak, tavuk ürünlerimizde
+            <strong>Erpiliç</strong>
+            kalitesinden ödün vermiyor; bu taze tedarik sürecindeki
+            desteklerinden dolayı
+            <strong>Arda Tavukçuluk</strong>’a teşekkürlerimizi sunuyoruz. Özel
+            marinasyonumuzda 24 saat boyunca dinlendirdiğimiz etlerimizi, meşe
+            kömürünün isli kokusuyla ağır ağır pişiriyoruz. Bizim için her
+            kebap; sadece bir yemek değil, kömür ateşinde şekillenen bir lezzet
+            sanatıdır.
+          </p>
+          <ul class="features">
+            <li><i class="fas fa-check-circle"></i> Günlük Taze Tavuk & Et</li>
+            <li><i class="fas fa-check-circle"></i> Meşe Kömürü Ateşi</li>
+            <li><i class="fas fa-check-circle"></i> Anne Eli Değmiş Mezeler</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/porsiyon/kanat.webp" alt="Kanat" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Kanat Porsiyon</h3>
-                <span class="price">300₺</span>
-              </div>
-              <p class="desc">
-                Özel sosla marine edilmiş çıtır tavuk kanatları, yanında
-                kızarmış patates, pilav ve mevsim salatası.
-              </p>
-            </div>
+    <section class="reviews-section">
+      <div class="bento-header">
+        <h2>Müşterilerimiz Ne Diyor?</h2>
+        <p>Lezzetimizi tadanların samimi yorumları.</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </div>
+          <p>
+            "Hayatımda yediğim en iyi kebap diyebilirim. Sosu ve baharatı tam
+            kıvamındaydı. Kesinlikle tavsiye ederim."
+          </p>
+          <span class="customer-name">- Ahmet Yılmaz</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </div>
+          <p>
+            "Servis çok hızlı ve güler yüzlü. Mekan tertemiz. Ailecek
+            gelinebilecek nadir yerlerden."
+          </p>
+          <span class="customer-name">- Elif Demir</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>
+            "Kebabı kömür ateşinde pişirdikleri belli, o is kokusu harika bir
+            aroma katıyor. Fiyatlar da gayet makul."
+          </p>
+          <span class="customer-name">- Caner K.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-proof">
+      <div class="proof-header">
+        <h2>Bizi Takip Edin</h2>
+        <a href="https://instagram.com/omerustadonerkebap" target="_blank"
+          >@omerustadonerkebap</a
+        >
+      </div>
+      <div class="insta-grid">
+        <div class="insta-item">
+          <img src="assets/img/menu/porsiyon/kanat.webp" />
+        </div>
+        <div class="insta-item">
+          <img
+            src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?q=80&w=400"
+          />
+        </div>
+        <div class="insta-item"><img src="assets/img/çiğköfte.jpg" /></div>
+        <div class="insta-item">
+          <img src="assets/img/menu/kumru/tam.webp" />
+        </div>
+      </div>
+    </section>
+
+    <section id="iletisim" class="location-section">
+      <div class="location-card">
+        <div class="info-side">
+          <h2>Neredeyiz?</h2>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Çamlıca Mahallesi Kavakdere caddesi<br />Nilüfer / Bursa</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <p>Hergün: 09:00 - 23:00</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <p>
+              <a
+                href="tel:02244525210"
+                style="color: inherit; text-decoration: none"
+                >0224 452 52 10</a
+              >
+              <span style="margin: 0 5px"> - </span>
+              <a
+                href="tel:05050100112"
+                style="color: inherit; text-decoration: none"
+                >0505 010 01 12</a
+              >
+            </p>
           </div>
         </div>
-      </section>
+        <div class="map-side">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48768.8652689429!2d28.962843225288427!3d40.18560991796733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca169692b9c7b7%3A0xc26f0c2cc5387222!2zw4dhbWzEsWNhLCAxNjExMCBOacyHbMO8ZmVyL0J1cnNh!5e0!3m2!1str!2str!4v1768898635361!5m2!1str!2str"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
 
-      <section id="durum" class="menu-section">
-        <h2 class="section-title">Dürümler</h2>
-        <div class="menu-grid">
-          <div class="menu-card">
-            <div class="card-img">
-              <img
-                src="assets/img/menu/durum/adanadurum.webp"
-                alt="Adana Dürüm"
-              />
-              <span class="tag-badge spicy">Acılı 🔥</span>
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Adana Dürüm</h3>
-                <span class="price">175₺</span>
-              </div>
-              <p class="desc">
-                Zırh kıyması, özel baharatlar, közlenmiş biber, sumaklı soğan ve
-                domates ile sarılmış lezzet.
-              </p>
-            </div>
-          </div>
-
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/durum/urfa.webp" alt="Urfa Dürüm" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Urfa Dürüm</h3>
-                <span class="price">175₺</span>
-              </div>
-              <p class="desc">
-                Acısız zırh kıyması, taze maydanoz, domates ve özel sosumuzla
-                hazırlanan yumuşacık dürüm.
-              </p>
-            </div>
-          </div>
-
-          <div class="menu-card">
-            <div class="card-img">
-              <img
-                src="assets/img/menu/durum/cigerdurum.webp"
-                alt="Ciğer Dürüm"
-              />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Ciğer Dürüm</h3>
-                <span class="price">175₺</span>
-              </div>
-              <p class="desc">
-                Şişte pişmiş taze kuzu ciğeri, kimyon, sumaklı soğan ve maydanoz
-                eşliğinde.
-              </p>
-            </div>
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">ÖMER<span>USTA</span></div>
+          <p>
+            2016'dan beri değişmeyen lezzet, güler yüzlü hizmet. Kömür ateşinin
+            ustası.
+          </p>
+          <div style="margin-top: 1rem">
+            <a
+              href="https://www.instagram.com/omerustadonerkebap"
+              target="_blank"
+              style="color: white; margin-right: 15px"
+              ><i class="fab fa-instagram fa-lg"></i
+            ></a>
+            <a href="#" style="color: white; margin-right: 15px"
+              ><i class="fab fa-facebook fa-lg"></i
+            ></a>
+            <a href="https://wa.me/905050100112" style="color: white"
+              ><i class="fab fa-whatsapp fa-lg"></i
+            ></a>
           </div>
         </div>
-      </section>
-
-      <section id="doner" class="menu-section">
-        <h2 class="section-title">Dönerler</h2>
-        <div class="menu-grid">
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/doner/tamtavuk.webp" alt="Tam Döner" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Tam Döner</h3>
-                <span class="price">130₺</span>
-              </div>
-              <p class="desc">
-                Taze tombik ekmek arasında bol malzemeli, özel soslu, turşu ve
-                patatesli yaprak döner.
-              </p>
-            </div>
-          </div>
-
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/doner/atom.webp" alt="Atom Döner" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Atom Döner</h3>
-                <span class="price">90₺</span>
-              </div>
-              <p class="desc">
-                Çıtır atom ekmeği içerisinde bol döner eti, erimiş kaşar peyniri
-                ve özel sos lezzeti.
-              </p>
-            </div>
-          </div>
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/doner/yarim.webp" alt="Yarım Döner" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Yarım Döner</h3>
-                <span class="price">70₺</span>
-              </div>
-              <p class="desc">
-                Klasik yarım ekmek arası döner; domates, turşu ve patates
-                kızartması ile doyurucu seçim.
-              </p>
-            </div>
-          </div>
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/doner/durum.webp" alt="Tavuk Dürüm" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Tavuk Dürüm</h3>
-                <span class="price">140₺</span>
-              </div>
-              <p class="desc">
-                Özel soslu tavuk döner, kornişon turşu, patates kızartması ve
-                sarımsaklı mayonez ile dürüm.
-              </p>
-            </div>
-          </div>
-          <div class="menu-card">
-            <div class="card-img">
-              <img
-                src="assets/img/menu/doner/porsiyon.webp"
-                alt="Porsiyon Döner"
-              />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Porsiyon Döner</h3>
-                <span class="price">200₺</span>
-              </div>
-              <p class="desc">
-                Geniş tabakta servis edilen yaprak döner, yanında pirinç pilavı,
-                közlenmiş biber ve domates.
-              </p>
-            </div>
-          </div>
+        <div class="footer-links">
+          <h4>Hızlı Linkler</h4>
+          <ul>
+            <li><a href="#anasayfa">Anasayfa</a></li>
+            <li><a href="#bento-menu">Menü</a></li>
+            <li><a href="#discover">Keşfet</a></li>
+            <li><a href="#hakkimizda">Hakkımızda</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+          </ul>
         </div>
-      </section>
-
-      <section id="kumru" class="menu-section">
-        <h2 class="section-title">Kumrular</h2>
-        <div class="menu-grid">
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/kumru/tam.webp" alt="Tam Kumru" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Tam Kumru</h3>
-                <span class="price">160₺</span>
-              </div>
-              <p class="desc">
-                Özel kumru ekmeğinde sucuk, salam, sosis, kaşar peyniri, turşu
-                ve domatesin eşsiz uyumu.
-              </p>
-            </div>
-          </div>
-
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/kumru/yarim.webp" alt="Yarım Kumru" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Yarım Kumru</h3>
-                <span class="price">80₺</span>
-              </div>
-              <p class="desc">
-                Daha az aç olanlar için; sucuk, sosis ve erimiş kaşar peyniri
-                ile hazırlanan lezzetli atıştırmalık.
-              </p>
-            </div>
-          </div>
+        <div class="footer-links">
+          <h4>Lezzetler</h4>
+          <ul>
+            <li>
+              <a href="menu.html#porsiyon" class="cat-link active">
+                <i class="fas fa-utensils"></i> Porsiyonlar
+              </a>
+            </li>
+            <li>
+              <a href="menu.html#durum" class="cat-link">
+                <i class="fas fa-scroll"></i> Dürümler
+              </a>
+            </li>
+            <li>
+              <a href="menu.html#doner" class="cat-link">
+                <i class="fas fa-drumstick-bite"></i> Tavuk Döner
+              </a>
+            </li>
+            <li>
+              <a href="menu.html#kumru" class="cat-link">
+                <i class="fas fa-burger"></i> Kumrular
+              </a>
+            </li>
+            <li>
+              <a href="menu.html#tost" class="cat-link">
+                <i class="fas fa-bread-slice"></i> Tostlar
+              </a>
+            </li>
+            <li>
+              <a href="menu.html#icecek" class="cat-link">
+                <i class="fa-solid fa-whiskey-glass"></i> İçecekler
+              </a>
+            </li>
+          </ul>
         </div>
-      </section>
-
-      <section id="tost" class="menu-section">
-        <h2 class="section-title">Tostlar</h2>
-        <div class="menu-grid">
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/tost/kasarli.webp" alt="Kaşarlı Tost" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Kaşarlı Tost</h3>
-                <span class="price">150₺</span>
-              </div>
-              <p class="desc">
-                Kaliteli tost ekmeği arasında bol, sünen taze kaşar peyniri ve
-                tereyağı lezzeti.
-              </p>
-            </div>
-          </div>
-
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/tost/sucuk.webp" alt="Sucuk Tost" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Sucuklu Tost</h3>
-                <span class="price">150₺</span>
-              </div>
-              <p class="desc">
-                Özel baharatlı dana sucuk dilimleri ile hazırlanan, çıtır çıtır
-                sıcak tost.
-              </p>
-            </div>
-          </div>
-
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/tost/karisik.webp" alt="Karışık Tost" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Karışık Tost</h3>
-                <span class="price">150₺</span>
-              </div>
-              <p class="desc">
-                Sucuk ve kaşar peynirinin muhteşem buluşması, tereyağlı ve çıtır
-                ekmek arasında.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="icecek" class="menu-section">
-        <h2 class="section-title">İçecekler</h2>
-        <div class="menu-grid">
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/icecek/kola.webp" alt="Kutu Kola" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Kutu Kola</h3>
-                <span class="price">50₺</span>
-              </div>
-              <p class="desc">
-                Buz gibi soğuk, ferahlatıcı orijinal lezzet (330ml kutu).
-              </p>
-            </div>
-          </div>
-
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/icecek/pepsi.webp" alt="Kutu Pepsi" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Kutu Pepsi</h3>
-                <span class="price">50₺</span>
-              </div>
-              <p class="desc">
-                Yemeğinizin yanına yakışan buz gibi soğuk Pepsi (330ml kutu).
-              </p>
-            </div>
-          </div>
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/icecek/fanta.webp" alt="Kutu Fanta" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Kutu Fanta</h3>
-                <span class="price">50₺</span>
-              </div>
-              <p class="desc">
-                Portakal aromalı, gazlı ve ferahlatıcı içecek (330ml kutu).
-              </p>
-            </div>
-          </div>
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/icecek/sisekola.jpg" alt="Şişe Kola" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Şişe Kola</h3>
-                <span class="price">50₺</span>
-              </div>
-              <p class="desc">
-                Klasik cam şişe lezzetiyle buz gibi Coca-Cola (200ml).
-              </p>
-            </div>
-          </div>
-          <div class="menu-card">
-            <div class="card-img">
-              <img
-                src="assets/img/menu/icecek/sisefanta.webp"
-                alt="Şişe Fanta"
-              />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Şişe Fanta</h3>
-                <span class="price">50₺</span>
-              </div>
-              <p class="desc">
-                Portakalın en doğal hali, cam şişe farkıyla (200ml).
-              </p>
-            </div>
-          </div>
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/icecek/salgam.webp" alt="Şalgam" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Şalgam</h3>
-                <span class="price">50₺</span>
-              </div>
-              <p class="desc">
-                Acılı veya acısız seçenekleriyle, kebapların vazgeçilmez
-                eşlikçisi.
-              </p>
-            </div>
-          </div>
-          <div class="menu-card">
-            <div class="card-img">
-              <img src="assets/img/menu/icecek/ayran.webp" alt="Ayran" />
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <h3>Ayran</h3>
-                <span class="price">30₺</span>
-              </div>
-              <p class="desc">
-                Bol köpüklü, doğal yoğurttan yapılmış, ferahlatıcı yayık ayranı.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
+      </div>
       <div class="copyright">
         <p>&copy; 2026 Ömer Usta Döner & Kebap. Tüm hakları saklıdır.</p>
       </div>
